@@ -7,8 +7,15 @@
 /* font Title- font styles */
 .pTitle {
   color: var(--tailwind-slate-200, #E2E8F0);
-  font-size: 72px;
+  font-size: 5rem;
   font-weight: 900;
+}
+
+@media screen and (max-width: 375px) {
+  .pTitle {
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
 
 /* bottom mask  */

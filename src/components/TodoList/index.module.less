@@ -4,9 +4,9 @@
     flex-direction: column;
     align-items: center;
     gap: 34px;
-    width: 489px;
+    width: 34rem;//489px;
     justify-content: center;
-    margin:34px 0 34px 0;
+    margin:2.7rem 0;//34px 0 34px 0;
     cursor: pointer;
     position: relative;
    
@@ -14,8 +14,8 @@
     .boxContainer{
         display: flex;
         flex-direction: column;
-        width: 445px;
-        padding: 26px 34px;
+        width:31rem; //445px;
+        padding:1.81rem 2.36rem;// 26px 34px;
         align-items: flex-start;
         gap: 12px;
         background: var(--tailwind-white, #FFF);
@@ -24,8 +24,8 @@
     }
     .boxContainer:hover {
         width: 489px;
-        height: 250px;
-        padding:32px 56px;
+        height: 252px;
+        padding:5rem, 3.89rem;//32px 56px;
         --line-number: 5;
     }
  
@@ -43,3 +43,18 @@
 .conatiner.masked::after {
     display: inline-flex;
   }
+
+@media screen and (max-width: 960px) {
+.conatiner{
+    width: 100%;
+    .boxContainer{
+        width: 90%;
+    }
+    .boxContainer:hover {
+        width: 100%;
+        height: 242px;
+        padding:25px 16px;
+        --line-number: 5
+    }
+}
+}
